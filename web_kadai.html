@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>todolist</title>
+  </head>
+  <body>
+
+   
+  
+    <ul>
+      <li>ユーザー名:<input type = "text" id = "name"  ></li>
+      <li>タスク:<input type = "text" id = "task" ></li>
+      <li><button type = "button" value="button" onClick = clickButton()>登録</button></li>
+
+    </ul>
+    <script>
+       function clickButton(){
+           const getName = document.getElementById("name")
+           const getTask = document.getElementById("task")
+           console.log("ユーザー名" + getName.value,"タスク"+getTask.value)
+       } 
+    </script>
+    
+    
+   
+  </body>
+</html>
