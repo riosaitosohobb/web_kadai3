@@ -14,11 +14,28 @@
 
     </ul>
     <script>
+        var getName = []
+        var getTask = []
        function clickButton(){
-           const getName = document.getElementById("name")
-           const getTask = document.getElementById("task")
-           console.log("ユーザー名" + getName.value,"タスク"+getTask.value)
-       } 
+           const Name = document.getElementById("name")
+           const Task = document.getElementById("task")
+
+           getName.push(Name.value)
+           getTask.push(Task.value)
+
+
+           console.log(getName,getTask)
+
+           const Getnametask = getName.map((getName,i) => ({
+               username: getName[i],
+               UserTask: getTask[i]
+
+           })
+        
+           )  
+           console.log(Getnametask)
+           console.log(getName) 
+       }
     </script>
     
     
