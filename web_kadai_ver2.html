@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Step1</title>
+  </head>
+  <body>
+    <form>
+      <ul>
+        <li>
+          <label for="name">ユーザ名:</label>
+          <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+          <label for="task">タスク:</label>
+          <textarea id="task" name="user_task"></textarea>
+        </li>
+        <li class="button">
+          <button type="button" onclick="onClickButton()">登録</button>
+        </li>
+      </ul>
+    </form>
+    <script src="sample.js">const onClickButton = () => {
+        const name = document.querySelector("#name");
+        const task = document.querySelector("#task");
+        console.log(name.value, task.value);
+    }</script>
+  </body>
+</html>
